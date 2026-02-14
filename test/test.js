@@ -3,13 +3,13 @@
 require('mocha');
 const fs = require('fs');
 const assert = require('assert');
-const through = require('through2');
+const { PassThrough } = require('node:stream');
 const File = require('vinyl');
 const minify = require('..');
 
 function toStream(contents) {
-  let stream = through();
-  stream.write(contents);
+  let stream = new PassThrough();
+  stream.end(contents);
   return stream;
 }
 
@@ -112,4 +112,3 @@ describe('gulp-html-minifier-terser', () => {
     });
   });
 });
-
