@@ -1,7 +1,7 @@
 {
   "name": "gulp-html-minifier-terser",
   "version": "7.1.0",
-  "description": "gulp plugin to minify HTML.",
+  "description": "Gulp plugin to minify HTML.",
   "keywords": [
     "format",
     "gulp",
@@ -13,34 +13,22 @@
     "minifier",
     "minify"
   ],
-  "homepage": "https://github.com/pioug/gulp-html-minifier-terser",
   "bugs": {
     "url": "https://github.com/pioug/gulp-html-minifier-terser/issues"
   },
   "license": "MIT",
-  "contributors": [
-    "Brian Woodward (https://twitter.com/doowb)",
-    "Chris Watson (https://github.com/cwonrails)",
-    "Igor Adamenko (http://igoradamenko.com)",
-    "Joel Arvidsson (http://twitter.com/trastknast)",
-    "John-David Dalton (http://twitter.com/jdalton)",
-    "Jon Schlinkert (http://twitter.com/jonschlinkert)",
-    "Jose Chirivella (https://www.jchirivella.com)",
-    "Nico Schlömer (https://github.com/nschloe)",
-    "Shinnosuke Watanabe (https://shinnn.github.io)",
-    "Steve Lacy (http://slacy.me)",
-    "Tom Byrer (https://github.com/tomByrer)",
-    "(https://github.com/TheDancingCode)"
-  ],
-  "repository": "pioug/gulp-html-minifier-terser",
-  "files": [
-    "index.js"
-  ],
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pioug/gulp-html-minifier-terser.git"
+  },
   "main": "index.js",
+  "exports": "./index.js",
   "scripts": {
     "format": "oxfmt --write \"**/*.{js,json,yml,yaml,md}\"",
     "format:check": "oxfmt --check \"**/*.{js,json,yml,yaml,md}\"",
     "lint": "oxlint --deny-warnings .",
+    "prepublishOnly": "npm run format:check && npm run lint && npm test",
     "test": "mocha"
   },
   "dependencies": {
@@ -56,17 +44,5 @@
   },
   "engines": {
     "node": ">=24.0.0"
-  },
-  "authors": [
-    {
-      "name": "Jon Schlinkert",
-      "url": "https://github.com/jonschlinkert",
-      "twitter": "jonschlinkert"
-    },
-    {
-      "name": "Shinnosuke Watanabe",
-      "url": "https://github.com/shinnn",
-      "twitter": "shinnn_tw"
-    }
-  ]
+  }
 }
