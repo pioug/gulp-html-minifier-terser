@@ -1,20 +1,23 @@
 {
   "name": "gulp-html-minifier-terser",
-  "description": "gulp plugin to minify HTML.",
   "version": "7.1.0",
-  "homepage": "https://github.com/pioug/gulp-html-minifier-terser",
-  "authors": [
-    {
-      "name": "Jon Schlinkert",
-      "url": "https://github.com/jonschlinkert",
-      "twitter": "jonschlinkert"
-    },
-    {
-      "name": "Shinnosuke Watanabe",
-      "url": "https://github.com/shinnn",
-      "twitter": "shinnn_tw"
-    }
+  "description": "gulp plugin to minify HTML.",
+  "keywords": [
+    "format",
+    "gulp",
+    "gulpplugin",
+    "htm",
+    "html",
+    "htmlmin",
+    "minification",
+    "minifier",
+    "minify"
   ],
+  "homepage": "https://github.com/pioug/gulp-html-minifier-terser",
+  "bugs": {
+    "url": "https://github.com/pioug/gulp-html-minifier-terser/issues"
+  },
+  "license": "MIT",
   "contributors": [
     "Brian Woodward (https://twitter.com/doowb)",
     "Chris Watson (https://github.com/cwonrails)",
@@ -30,18 +33,13 @@
     "(https://github.com/TheDancingCode)"
   ],
   "repository": "pioug/gulp-html-minifier-terser",
-  "bugs": {
-    "url": "https://github.com/pioug/gulp-html-minifier-terser/issues"
-  },
-  "license": "MIT",
   "files": [
     "index.js"
   ],
   "main": "index.js",
-  "engines": {
-    "node": ">=24.0.0"
-  },
   "scripts": {
+    "format": "oxfmt --write \"**/*.{js,json,yml,yaml}\"",
+    "format:check": "oxfmt --check \"**/*.{js,json,yml,yaml}\"",
     "lint": "oxlint --deny-warnings .",
     "test": "mocha"
   },
@@ -52,19 +50,24 @@
   "devDependencies": {
     "gulp": "^5.0.1",
     "mocha": "^12.0.0-beta-9",
+    "oxfmt": "^0.32.0",
     "oxlint": "^1.47.0",
     "vinyl": "^3.0.0"
   },
-  "keywords": [
-    "format",
-    "gulp",
-    "gulpplugin",
-    "htm",
-    "html",
-    "htmlmin",
-    "minification",
-    "minifier",
-    "minify"
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "authors": [
+    {
+      "name": "Jon Schlinkert",
+      "url": "https://github.com/jonschlinkert",
+      "twitter": "jonschlinkert"
+    },
+    {
+      "name": "Shinnosuke Watanabe",
+      "url": "https://github.com/shinnn",
+      "twitter": "shinnn_tw"
+    }
   ],
   "verb": {
     "toc": false,

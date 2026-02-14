@@ -1,11 +1,15 @@
-'use strict';
+"use strict";
 
-const { Transform } = require('node:stream');
-const PluginError = require('plugin-error');
-const htmlmin = require('html-minifier-terser');
+const { Transform } = require("node:stream");
+const PluginError = require("plugin-error");
+const htmlmin = require("html-minifier-terser");
 
 function createPluginError(file, options, err) {
-  return new PluginError('gulp-html-minifier-terser', err, Object.assign({}, options, { fileName: file.path }));
+  return new PluginError(
+    "gulp-html-minifier-terser",
+    err,
+    Object.assign({}, options, { fileName: file.path }),
+  );
 }
 
 function createMinifyStream(file, options) {
@@ -25,11 +29,11 @@ function createMinifyStream(file, options) {
       } catch (err) {
         cb(createPluginError(file, options, err));
       }
-    }
+    },
   });
 }
 
-module.exports = options => {
+module.exports = (options) => {
   return new Transform({
     objectMode: true,
     async transform(file, enc, next) {
@@ -40,7 +44,7 @@ module.exports = options => {
 
       if (file.isStream()) {
         let minifyStream = file.contents.pipe(createMinifyStream(file, options));
-        minifyStream.on('error', error => this.emit('error', error));
+        minifyStream.on("error", (error) => this.emit("error", error));
         file.contents = minifyStream;
         next(null, file);
         return;
@@ -53,6 +57,6 @@ module.exports = options => {
       } catch (err) {
         next(createPluginError(file, options, err));
       }
-    }
+    },
   });
 };
