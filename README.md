@@ -1,13 +1,13 @@
 # gulp-html-minifier-terser [![NPM version](https://img.shields.io/npm/v/gulp-html-minifier-terser.svg?style=flat)](https://www.npmjs.com/package/gulp-html-minifier-terser) [![NPM monthly downloads](https://img.shields.io/npm/dm/gulp-html-minifier-terser.svg?style=flat)](https://npmjs.org/package/gulp-html-minifier-terser) [![NPM total downloads](https://img.shields.io/npm/dt/gulp-html-minifier-terser.svg?style=flat)](https://npmjs.org/package/gulp-html-minifier-terser) ![Run tests](https://github.com/pioug/gulp-html-minifier-terser/workflows/Run%20tests/badge.svg)
 
-> gulp plugin to minify HTML.
+> Gulp plugin to minify HTML.
 
 ## Install
 
 Install with [npm](https://www.npmjs.com/):
 
 ```sh
-$ npm install --save gulp-html-minifier-terser
+npm install --save gulp-html-minifier-terser
 ```
 
 ## Heads up!
@@ -41,7 +41,7 @@ Pull requests and stars are always welcome. For bugs and feature requests, [plea
 Running and reviewing unit tests is a great way to get familiar with a library and its API. You can install dependencies and run tests with the following command:
 
 ```sh
-$ npm install && npm test
+npm install && npm test
 ```
 
 ### Contributors
