@@ -42,6 +42,7 @@
     "node": ">=24.0.0"
   },
   "scripts": {
+    "lint": "oxlint --deny-warnings .",
     "test": "mocha"
   },
   "dependencies": {
@@ -51,6 +52,7 @@
   "devDependencies": {
     "gulp": "^5.0.1",
     "mocha": "^12.0.0-beta-9",
+    "oxlint": "^1.47.0",
     "vinyl": "^3.0.0"
   },
   "keywords": [

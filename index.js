@@ -33,26 +33,26 @@ module.exports = options => {
   return new Transform({
     objectMode: true,
     async transform(file, enc, next) {
-    if (file.isNull()) {
-      next(null, file);
-      return;
-    }
+      if (file.isNull()) {
+        next(null, file);
+        return;
+      }
 
-    if (file.isStream()) {
-      let minifyStream = file.contents.pipe(createMinifyStream(file, options));
-      minifyStream.on('error', error => this.emit('error', error));
-      file.contents = minifyStream;
-      next(null, file);
-      return;
-    }
+      if (file.isStream()) {
+        let minifyStream = file.contents.pipe(createMinifyStream(file, options));
+        minifyStream.on('error', error => this.emit('error', error));
+        file.contents = minifyStream;
+        next(null, file);
+        return;
+      }
 
-    try {
-      let minified = await htmlmin.minify(file.contents.toString(), options);
-      file.contents = Buffer.from(minified);
-      next(null, file);
-    } catch (err) {
-      next(createPluginError(file, options, err));
+      try {
+        let minified = await htmlmin.minify(file.contents.toString(), options);
+        file.contents = Buffer.from(minified);
+        next(null, file);
+      } catch (err) {
+        next(createPluginError(file, options, err));
+      }
     }
-  }
   });
 };
