@@ -12,11 +12,11 @@ $ npm install --save gulp-html-minifier-terser
 
 ## Heads up!
 
-_**Please do not report issues related to HTML parsing and output on this repository. Report those issues to the [html-minifier-terser](https://github.com/terser/html-minifier-terser/issues) issue tracker.**_
+_**Please do not report issues related to HTML parsing and output in this repository. Report those issues to the [html-minifier-terser](https://github.com/terser/html-minifier-terser/issues) issue tracker.**_
 
 ## Usage
 
-See the [html-minifer-terser docs](https://github.com/terser/html-minifier-terser) for all available options.
+See the [html-minifier-terser docs](https://github.com/terser/html-minifier-terser) for all available options.
 
 ```js
 const gulp = require("gulp");
@@ -38,7 +38,7 @@ Pull requests and stars are always welcome. For bugs and feature requests, [plea
 
 ### Running Tests
 
-Running and reviewing unit tests is a great way to get familiarized with a library and its API. You can install dependencies and run tests with the following command:
+Running and reviewing unit tests is a great way to get familiar with a library and its API. You can install dependencies and run tests with the following command:
 
 ```sh
 $ npm install && npm test
@@ -63,7 +63,7 @@ $ npm install && npm test
 | 1           | [rodrigograca31](https://github.com/rodrigograca31)     |
 | 1           | [tomByrer](https://github.com/tomByrer)                 |
 
-### Author
+### Authors
 
 **Jon Schlinkert**
 
@@ -74,7 +74,6 @@ $ npm install && npm test
 **Shinnosuke Watanabe**
 
 - [GitHub Profile](https://github.com/shinnn)
-- [LinkedIn Profile](https://www.linkedin.com/in/jonschlinkert)
 
 ### License
 
