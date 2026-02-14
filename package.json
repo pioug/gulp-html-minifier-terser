@@ -38,8 +38,8 @@
   ],
   "main": "index.js",
   "scripts": {
-    "format": "oxfmt --write \"**/*.{js,json,yml,yaml}\"",
-    "format:check": "oxfmt --check \"**/*.{js,json,yml,yaml}\"",
+    "format": "oxfmt --write \"**/*.{js,json,yml,yaml,md}\"",
+    "format:check": "oxfmt --check \"**/*.{js,json,yml,yaml,md}\"",
     "lint": "oxlint --deny-warnings .",
     "test": "mocha"
   },

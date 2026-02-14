@@ -19,13 +19,14 @@ _**Please do not report issues related to HTML parsing and output on this reposi
 See the [html-minifer-terser docs](https://github.com/terser/html-minifier-terser) for all available options.
 
 ```js
-const gulp = require('gulp');
-const htmlmin = require('gulp-html-minifier-terser');
+const gulp = require("gulp");
+const htmlmin = require("gulp-html-minifier-terser");
 
-gulp.task('minify', () => {
-  return gulp.src('src/*.html')
+gulp.task("minify", () => {
+  return gulp
+    .src("src/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest("dist"));
 });
 ```
 
@@ -45,35 +46,35 @@ $ npm install && npm test
 
 ### Contributors
 
-| **Commits** | **Contributor** |
-| --- | --- |
-| 41 | [shinnn](https://github.com/shinnn) |
-| 28 | [jonschlinkert](https://github.com/jonschlinkert) |
-| 27 | [pioug](https://github.com/pioug) |
-| 11 | [doowb](https://github.com/doowb) |
-| 7 | [stevelacy](https://github.com/stevelacy) |
-| 2 | [TheDancingCode](https://github.com/TheDancingCode) |
-| 1 | [cwonrails](https://github.com/cwonrails) |
-| 1 | [igoradamenko](https://github.com/igoradamenko) |
-| 1 | [oblador](https://github.com/oblador) |
-| 1 | [jdalton](https://github.com/jdalton) |
-| 1 | [JoseChirivella14](https://github.com/JoseChirivella14) |
-| 1 | [nschloe](https://github.com/nschloe) |
-| 1 | [rodrigograca31](https://github.com/rodrigograca31) |
-| 1 | [tomByrer](https://github.com/tomByrer) |
+| **Commits** | **Contributor**                                         |
+| ----------- | ------------------------------------------------------- |
+| 41          | [shinnn](https://github.com/shinnn)                     |
+| 28          | [jonschlinkert](https://github.com/jonschlinkert)       |
+| 27          | [pioug](https://github.com/pioug)                       |
+| 11          | [doowb](https://github.com/doowb)                       |
+| 7           | [stevelacy](https://github.com/stevelacy)               |
+| 2           | [TheDancingCode](https://github.com/TheDancingCode)     |
+| 1           | [cwonrails](https://github.com/cwonrails)               |
+| 1           | [igoradamenko](https://github.com/igoradamenko)         |
+| 1           | [oblador](https://github.com/oblador)                   |
+| 1           | [jdalton](https://github.com/jdalton)                   |
+| 1           | [JoseChirivella14](https://github.com/JoseChirivella14) |
+| 1           | [nschloe](https://github.com/nschloe)                   |
+| 1           | [rodrigograca31](https://github.com/rodrigograca31)     |
+| 1           | [tomByrer](https://github.com/tomByrer)                 |
 
 ### Author
 
 **Jon Schlinkert**
 
-* [GitHub Profile](https://github.com/jonschlinkert)
-* [Twitter Profile](https://twitter.com/jonschlinkert)
-* [LinkedIn Profile](https://www.linkedin.com/in/jonschlinkert)
+- [GitHub Profile](https://github.com/jonschlinkert)
+- [Twitter Profile](https://twitter.com/jonschlinkert)
+- [LinkedIn Profile](https://www.linkedin.com/in/jonschlinkert)
 
 **Shinnosuke Watanabe**
 
-* [GitHub Profile](https://github.com/shinnn)
-* [LinkedIn Profile](https://www.linkedin.com/in/jonschlinkert)
+- [GitHub Profile](https://github.com/shinnn)
+- [LinkedIn Profile](https://www.linkedin.com/in/jonschlinkert)
 
 ### License
 
