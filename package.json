@@ -68,15 +68,5 @@
       "url": "https://github.com/shinnn",
       "twitter": "shinnn_tw"
     }
-  ],
-  "verb": {
-    "toc": false,
-    "layout": "default",
-    "tasks": [
-      "readme"
-    ],
-    "lint": {
-      "reflinks": true
-    }
-  }
+  ]
 }
